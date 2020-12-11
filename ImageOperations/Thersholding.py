@@ -12,6 +12,8 @@ img = cv2.imread(file)
 # converted into RGB colors
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
+
+# Grayscale = (R + G + B ) / 3
 imgGray = cv2.cvtColor(img,cv2.COLOR_RGB2GRAY)
 imgGray_rgb = cv2.cvtColor(imgGray,cv2.COLOR_GRAY2RGB)
 
