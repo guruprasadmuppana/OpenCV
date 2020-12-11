@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+#Salt and Pepper noise
 def saltandpepper(img,snr):
     h=img.shape[0]
     w=img.shape[1]
@@ -44,7 +44,7 @@ filter = np.array( [
 #     [1,15,1],
 #     [1,1,1]
 # ])
-blur_filterCustom = filter/ (9.0)
+blur_filterCustom = filter/ (16.0)
 print(blur_filterCustom)
 
 # # 5x5 filter
@@ -74,7 +74,7 @@ cv2.imshow("salt and pepper",imgslat)
 median = cv2.medianBlur(img, 5)
 cv2.imshow('Median Blurring', median)
 
-bilateral = cv2.bilateralFilter(img, 9, 75, 75)
+bilateral = cv2.bilateralFilter(img, 9, 95, 95)
 cv2.imshow('Bilateral Blurring', bilateral)
 
 
