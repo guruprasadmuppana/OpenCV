@@ -14,3 +14,18 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+def function():
+    """ this is a test function for doc string"""
+    print("Test Function")
+
+
+function()
+
+# print(function.__doc__)
+#
+# print(print.__doc__)
+# # print(sum.__doc__)
+
+print(type(range(3)))
